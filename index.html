@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon_computer_now_32x32.png">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Tiendas Electro-TE</title>
 </head>
@@ -65,15 +68,18 @@
         <!--Imagen de presentación-->
         <div class="Section1">
             <section class="parallax">
+                <div class="animate__animated animate__backInLeft">
                 <h4>¿Que ofrecemos?</h4>
                 <p>Nos enfocamos en la venta y asesoría de compras de productos electrónicos y eléctricos para estudiar y trabajar</p>
+                </div>
             </section>
         </div>
     
 
         <!--Imagenes de tipos de producto-->
         <div class="Section2">
-            <h2>3 tipos de productos, 1 solo lugar</h2>
+            <h2 data-aos="fade-right" data-aos-delay="200">3 tipos de productos, 1 solo lugar</h2>
+            <div data-aos="flip-left" data-aos-delay="200" class="flexSection">
             <div class="flexSection">
                 <div class="Section_ImgText">
                     <img src="img/periferico_laptop.jpg" alt="imagen de producto periferico para laptop">
@@ -117,10 +123,12 @@
                 <div class="footContenido"></div> 
                 <div class="footContenido"></div>     
             </div> 
+        </div> 
         </div>
-          
-        </div>
-
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
