@@ -147,6 +147,10 @@ ul li:hover ul {
     padding-bottom: 5%; 
 } 
 
+.transicion:hover {
+    background-color: rgb(241, 244, 248);
+}
+
 /* FlexBox para categorías de productos */
 .flexContainer{
     display: flex;
