@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon_computer_now_32x32.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Tiendas Electro-TE</title>
+</head>
+<body>
+    <div class="gridContainer">
+        <!--Elementos de cabecera a la altura del Logo-->
+        <div class="Logo">
+            <a href="../index.html">
+                <img src="../img/Logo_computer_now_32x32.png" alt="Logo"> 
+            </a>
+        </div>
+
+        <div class="Logo_nav">
+            <ul class="navCabeceraFlex">
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="">Iniciar sesión</a></li>
+            </ul>
+        </div>
+
+        <!--Menú con Submenú-->
+        <div class="Header_nav">
+            <ul class="navFlex"> 
+                <li><a href="../pages/perifericos_laptop.html">Periféricos</a>
+                    <ul>
+                        <li><a href="">Auriculares</a></li>
+                        <li><a href="">Mouse</a></li>
+                        <li><a href="">Teclado</a></li>
+                        <li><a href="">Cámara web</a></li>
+                        <li><a href="">Memoria USB</a></li>
+                        <li><a href="">Artículos adicionales</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/articulos_comunicacion_red.html">Comunicaciones</a>
+                    <ul>
+                        <li><a href="">Access point</a></li>
+                        <li><a href="">Cable USB</a></li>
+                        <li><a href="">Adaptador USB</a></li>
+                        <li><a href="">Cable HDMI</a></li>
+                        <li><a href="">Cable de red</a></li>
+                        <li><a href="">Artículos adicionales</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/articulos_soporte_electrico.html">Eléctricos</a>
+                    <ul>
+                        <li><a href="">Estabilizadores</a></li>
+                        <li><a href="">Pilas</a></li>
+                        <li><a href="">Cables eléctricos</a></li>
+                        <li><a href="">Extensores de corriente</a></li>
+                        <li><a href="">Artículos adicionales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+    <!--Formulario para contacto por consultas-->
+    <div class="Section1">
+        <article>
+            <h2 class=debajoCabecera>Formulario de contacto</h2>
+			<form class="formulario" action="#">
+				
+                <label for="nombre">Nombre:
+					<input type="text" placeholder="Nombre" name="nombre"><br>
+				</label>
+				<label for="email">Email:
+					<input type="email" placeholder="visitante1@gmail.com" name="email"><br>
+				</label>
+                <label for="edad">Edad:
+					<input type="number" placeholder="Edad" name="edad"><br>
+				</label>
+
+				<label for="Consulta"> Consulta:<br>
+					<textarea placeholder="Consulta"></textarea>
+				</label> <br>
+				
+				<div><p>Tipo de producto:</p>
+					<div>Periféricos
+						<input type="radio" name="tipo_producto" value="periferico_laptop">
+					</div>
+					<div>Comunicaciones
+						<input type="radio" name="tipo_producto" value="articulo_electronico">
+					</div>
+                    <div>Eléctricos
+						<input type="radio" name="tipo_producto" value="articulo_electrico">
+					</div>
+                    <div>Todas las categorías
+						<input type="radio" name="tipo_producto" value="todas_tipos">
+					</div>
+				</div>
+				<p>Que tipo de consulta tiene?</p>
+				<select name="consulta" id="consulta"> 
+                    <option value="c1">Que producto comprar</option>
+					<option value="c2">Donde comprar</option>
+					<option value="c3">Que marca comprar</option>
+					<option value="c4">Cuando comprar</option>
+				</select>
+				<div>Quisiera recibir más información de nosotros?
+				<input type="checkbox" name="acepta" value="1">
+                </div>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpiar">
+                
+			</form>
+		</article>
+    </div>
+    <div class="Section2">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.975128439253!2d-77.03335608520932!3d-12.045232191468301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5c8c412ef%3A0x70ab6fed9a118eb8!2sPalacio%20Municipal%20de%20Lima!5e0!3m2!1ses!2spe!4v1642547044976!5m2!1ses!2spe" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+     <!--Footer-->
+     <div class="Footer">
+        <table class="footer" >
+            <tr class="footerTitulos">
+                <th>Nuestra empresa:</th>
+                <th>Horario de atención:</th>
+                <th>Contacto:</th>
+                <th>Servicios complementarios:</th>
+            </tr>
+            <tr>
+                <td>Sobre nosotros</td>
+                <td>De 7am hasta 11pm</td>
+                <td>51987654321</td>
+                <td>Asesoramiento</td>
+            </tr>
+            <tr>
+                <td>Politica de servicio al cliente</td>
+                <td></td>
+                <td></td>
+                <td>Soporte técnico remoto</td>
+            </tr>
+        </table>
+        </div>
+</div>
+</body>
+</html>
